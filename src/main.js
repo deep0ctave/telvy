@@ -3,7 +3,52 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 
 document.querySelector('#app').innerHTML = `
-<div style="height: 100vh; display:flex; justify-content:center; align-items:center;">
-  <button class="btn btn-primary btn-xl">Button</button>
+<div data-theme="cyberpunk">
+  <div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      <h1 class="text-5xl font-bold">Login now!</h1>
+      <p class="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+    </div>
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Email</label>
+          <input type="email" class="input" placeholder="Email" />
+          <label class="label">Password</label>
+          <input type="password" class="input" placeholder="Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+  <nav>
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+</footer>
   </div>
 `;
