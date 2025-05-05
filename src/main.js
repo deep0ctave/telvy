@@ -3,5 +3,6 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { login } from './login.js'
 import { signup_1, signup_2, signup_3 } from './signup.js'
+import { home } from './home.js'
 
-signup_3();
+home();
