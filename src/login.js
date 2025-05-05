@@ -1,6 +1,6 @@
 export function login() {
     document.querySelector('#app').innerHTML = `
-    <div data-theme="aqua" min-h-screen>
+    <div data-theme="pastel" min-h-screen>
     
     <div class="navbar bg-base-100 shadow-sm">
       <a class="btn btn-ghost text-xl">telvy</a>

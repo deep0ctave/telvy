@@ -1,6 +1,6 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { login } from './login.js'
+import { signup_1 } from './signup.js'
 
-login();
+signup_1();
