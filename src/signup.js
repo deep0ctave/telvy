@@ -1,19 +1,267 @@
 export function signup_1() {
     document.querySelector('#app').innerHTML = `
-    <div data-theme="pastel" min-h-screen>
+    <div data-theme="light" min-h-screen>
     
     <div class="navbar bg-base-100 shadow-sm">
       <a class="btn btn-ghost text-xl">telvy</a>
     </div>
     
-    <div class="hero bg-base-200" style="min-height: 90vh;">
+    <div class="hero bg-base-200 flex flex-col justify-center" style="min-height: 90vh;">
+
+            <ul class="steps pb-8 pt-8 w-1/2">
+  <li class="step step-primary">Personal Details</li>
+  <li class="step step-primary">School Details</li>
+  <li class="step">Verify</li>
+</ul>
 
         <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-        <legend class="fieldset-legend">Signup 1/2</legend>
+        <legend class="fieldset-legend">Signup 1/3</legend>
 
         <label class="label">Name</label>
         <input type="email" class="input" placeholder="John Doe" />
         
+    <p class="validator-hint hidden">Must be 10 digits</p>
+
+        <label class="label">D.O.B</label>
+        <label class="input">
+        <input type="date" />
+        </label>
+
+
+        <label class="label">Gender :</label>
+        <label class="select">
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+        </label>
+
+
+        <label class="label">I am a :</label>
+        <label class="select">
+        <select>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Admin</option>
+        </select>
+        </label>
+
+        <button class="btn btn-neutral mt-4">Next</button>
+        </fieldset>
+    </div>
+    
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+      </div>
+    `;
+  }
+
+
+  export function signup_2() {
+    document.querySelector('#app').innerHTML = `
+    <div data-theme="light" min-h-screen>
+    
+    <div class="navbar bg-base-100 shadow-sm">
+      <a class="btn btn-ghost text-xl">telvy</a>
+    </div>
+    
+    
+
+    <div class="hero bg-base-200 flex flex-col justify-center" style="min-height: 90vh;">
+
+        <ul class="steps pb-8 pt-8 w-1/2">
+  <li class="step step-primary">Personal Details</li>
+  <li class="step step-primary">School Details</li>
+  <li class="step">Verify</li>
+</ul>
+
+
+        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+        <legend class="fieldset-legend">Signup 2/3</legend>
+
+
+<label class="label">Enter School Name :</label>
+<input type="text" class="input" placeholder="Which School do you study in ?" list="browsers" />
+<datalist id="browsers">
+  <option value="Chrome"></option>
+  <option value="Firefox"></option>
+  <option value="Safari"></option>
+  <option value="Opera"></option>
+  <option value="Edge"></option>
+</datalist>
+
+<label class="label">Select Grade/Class :</label>
+<select class="select">
+  <option disabled selected>select</option>
+  <option>1st</option>
+  <option>2nd</option>
+  <option>3rd</option>
+</select>
+
+<label class="label">Select Section :</label>
+<select class="select">
+  <option disabled selected>select</option>
+  <option>A</option>
+  <option>B</option>
+  <option>C</option>
+</select>
+
+    <div class="flex pt-6 justify-between">
+        <button class="btn w-1/3 btn-neutral ">Prev</button>
+        <button class="btn w-1/3 btn-neutral ">Next</button>
+    </div>    
+        </fieldset>
+    </div>
+    
+
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+      </div>
+    `;
+  }
+  
+
+  export function signup_3() {
+    document.querySelector('#app').innerHTML = `
+    <div data-theme="light" min-h-screen>
+    
+    <div class="navbar bg-base-100 shadow-sm">
+      <a class="btn btn-ghost text-xl">telvy</a>
+    </div>
+    
+     <div class="hero bg-base-200 flex flex-col justify-center" style="min-height: 90vh;">
+
+            <ul class="steps pb-8 pt-8 w-1/2">
+  <li class="step step-primary">Personal Details</li>
+  <li class="step step-primary">School Details</li>
+  <li class="step">Verify</li>
+</ul>
+
+        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 mb-6">
+        <legend class="fieldset-legend">Signup 3/3</legend>
+
+        <label class="label">Enter Username :</label>
+    <label class="input validator">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </g>
+  </svg>
+  <input
+    type="text"
+    required
+    placeholder="Username"
+    pattern="[A-Za-z][A-Za-z0-9\-]*"
+    minlength="3"
+    maxlength="30"
+    title="Only letters, numbers or dash"
+  />
+</label>
+<p class="validator-hint hidden">
+  Must be 3 to 30 characters
+  <br />containing only letters, numbers or dash
+</p>
+
+<label class="label">Enter Password :</label>
+<label class="input validator">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path
+        d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+      ></path>
+      <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+    </g>
+  </svg>
+  <input
+    type="password"
+    required
+    placeholder="Password"
+    minlength="8"
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+    title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+  />
+</label>
+<p class="validator-hint hidden">
+  Must be more than 8 characters, including
+  <br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
+</p>
+
+
+<label class="label">Confirm Password :</label>
+<label class="input validator">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path
+        d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+      ></path>
+      <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+    </g>
+  </svg>
+  <input
+    type="password"
+    required
+    placeholder="Re-enter Password"
+    minlength="8"
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+    title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+  />
+</label>
+<p class="validator-hint hidden">
+  Password does not match</p>
+
+
         <label class="label">Phone.no</label>
         <label class="input validator">
 
@@ -42,14 +290,9 @@ export function signup_1() {
     title="Must be 10 digits"
     />
     </label>
-    <p class="validator-hint hidden">Must be 10 digits</p>
 
-        <label class="label">D.O.B</label>
-        <label class="input">
-        <input type="date" />
-        </label>
 
-        <label class="label">Email</label>
+<label class="label">Email</label>
         <label class="input validator">
   <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
@@ -67,16 +310,8 @@ export function signup_1() {
 </label>
 <div class="validator-hint hidden">Enter valid email address</div>
 
-        <label class="label">I am a</label>
-        <label class="select">
-        <select>
-            <option>Student</option>
-            <option>Teacher</option>
-            <option>Admin</option>
-        </select>
-        </label>
 
-        <button class="btn btn-neutral mt-4">Next</button>
+        <button class="btn btn-neutral mt-4 ">Submit</button>
         </fieldset>
     </div>
     

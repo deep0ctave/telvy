@@ -21,7 +21,10 @@ export function login() {
               <input type="email" class="input" placeholder="Email" />
               <label class="label">Password</label>
               <input type="password" class="input" placeholder="Password" />
-              <div><a class="link link-hover">Forgot password?</a></div>
+              <div class="flex justify-between mt-4">
+              <a class="link link-hover ml-2">Forgot password?</a>
+              <a class="link link-hover mr-2">Register</a>
+              </div>
               <button class="btn btn-neutral mt-4">Login</button>
             </fieldset>
           </div>
