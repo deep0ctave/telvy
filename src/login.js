@@ -3,7 +3,7 @@ export function login() {
     <div data-theme="light" min-h-screen>
     
     <div class="navbar bg-base-100 shadow-sm">
-      <a class="btn btn-ghost text-xl">telvy</a>
+      <a class="text-xl">telvy</a>
     </div>
     
     <div class="hero bg-base-200" style="min-height: 90vh;">
