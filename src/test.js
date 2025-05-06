@@ -1,28 +1,17 @@
 export function test() {
     document.querySelector('#app').innerHTML = `
-<div class="drawer lg:drawer-open overflow-hidden h-screen w-screen" data-theme="forest">
+<div class="drawer h-screen w-screen overflow-hidden lg:drawer-open" data-theme="forest">
   <!-- Toggle for mobile -->
   <input id="my-drawer" type="checkbox" class="drawer-toggle" />
 
   <!-- Main page content -->
-  <div class="drawer-content overflow-auto flex flex-col">
-    
+  <div class="drawer-content flex flex-col overflow-auto">
     <!-- Sticky Navbar (height = 4rem = 64px) -->
-    <div class="navbar bg-base-300 sticky top-0 z-30 h-16 px-4">
+    <div class="sticky top-0 z-30 navbar h-16 bg-base-300 px-4">
       <div class="flex-none lg:hidden">
-        <label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="inline-block h-6 w-6 stroke-current"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+        <label for="my-drawer" aria-label="open sidebar" class="btn hidden btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
       </div>
@@ -30,132 +19,71 @@ export function test() {
     </div>
 
     <!-- Scrollable main content -->
-    <div class="overflow-auto p-4">
-      <div class="grid md:grid-cols-3 gap-4">
-        <div class="md:col-span-3 stats stats-vertical md:stats-horizontal shadow">
-          
-          <div class="stat">
-            <div class="stat-title">Total Likes</div>
-            <div class="stat-value text-primary">25.6K</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Page Views</div>
-            <div class="stat-value text-secondary">2.6M</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Tasks done</div>
-            <div class="stat-value">86%</div>
-            <div class="stat-desc text-secondary">31 tasks remaining</div>
-          </div>
-
+    <div class="overflow-auto p-0">
+      
+    <div class="hero bg-base-200 p-0" style="min-height: 92vh;">
+      <div class="hero-content flex-col lg:flex-row-reverse gap-8">
+        <div class="text-center lg:text-left">
+          <h1 class="text-5xl font-bold">Login now!</h1>
+          <p class="py-2">
+            Just a step away from your next <strong>BIG</strong> question.
+          </p>
         </div>
-
-        <div class="md:col-span-3 stats stats-vertical md:stats-horizontal shadow">
-          
-          <div class="stat">
-            <div class="stat-title">Total Likes</div>
-            <div class="stat-value text-primary">25.6K</div>
-            <div class="stat-desc">21% more than last month</div>
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label">Email</label>
+              <input type="email" class="input" placeholder="Email" />
+              <label class="label">Password</label>
+              <input type="password" class="input" placeholder="Password" />
+              <div class="flex justify-between mt-4">
+              <a class="link link-hover ml-2">Forgot password?</a>
+              <a class="link link-hover mr-2">Register</a>
+              </div>
+              <button class="btn btn-neutral mt-4">Login</button>
+            </fieldset>
           </div>
-
-          <div class="stat">
-            <div class="stat-title">Page Views</div>
-            <div class="stat-value text-secondary">2.6M</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Tasks done</div>
-            <div class="stat-value">86%</div>
-            <div class="stat-desc text-secondary">31 tasks remaining</div>
-          </div>
-
         </div>
+      </div>
+    </div>
 
-        <div class="md:col-span-3 stats stats-vertical md:stats-horizontal shadow">
-          
-          <div class="stat">
-            <div class="stat-title">Total Likes</div>
-            <div class="stat-value text-primary">25.6K</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
 
-          <div class="stat">
-            <div class="stat-title">Page Views</div>
-            <div class="stat-value text-secondary">2.6M</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Tasks done</div>
-            <div class="stat-value">86%</div>
-            <div class="stat-desc text-secondary">31 tasks remaining</div>
-          </div>
-
-        </div>
-
-        <div class="md:col-span-3 stats stats-vertical md:stats-horizontal shadow">
-          
-          <div class="stat">
-            <div class="stat-title">Total Likes</div>
-            <div class="stat-value text-primary">25.6K</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Page Views</div>
-            <div class="stat-value text-secondary">2.6M</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Tasks done</div>
-            <div class="stat-value">86%</div>
-            <div class="stat-desc text-secondary">31 tasks remaining</div>
-          </div>
-
-        </div>
-
-        <div class="md:col-span-3 stats stats-vertical md:stats-horizontal shadow">
-          
-          <div class="stat">
-            <div class="stat-title">Total Likes</div>
-            <div class="stat-value text-primary">25.6K</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Page Views</div>
-            <div class="stat-value text-secondary">2.6M</div>
-            <div class="stat-desc">21% more than last month</div>
-          </div>
-
-          <div class="stat">
-            <div class="stat-title">Tasks done</div>
-            <div class="stat-value">86%</div>
-            <div class="stat-desc text-secondary">31 tasks remaining</div>
-          </div>
-
-        </div>
-
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+        
       </div>
     </div>
   </div>
 
   <!-- Sidebar for large screens -->
-  <div class="drawer-side h-full z-40 lg:z-30">
+  <div class="drawer-side z-40 h-full lg:z-30">
     <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-    <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+    <ul class="menu hidden min-h-full w-80 bg-base-200 p-4 text-base-content">
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
     </ul>
   </div>
 </div>
-
 
     `;
   }
