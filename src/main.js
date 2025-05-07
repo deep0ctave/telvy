@@ -8,4 +8,4 @@ import { test } from './test.js'
 import { no_sidebar_pg } from './no_sidebar_pg_template.js'
 import { sidebar_pg } from './sidebar_pg_template.js'
 
-sidebar_pg();
+test();

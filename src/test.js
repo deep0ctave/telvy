@@ -19,12 +19,12 @@ export function test() {
     </div>
 
     <!-- Scrollable main content -->
-    <div class="overflow-auto p-0">
-      
-    <div class="hero bg-base-200 p-0" style="min-height: 92vh;">
+    <div class="overflow-auto">
+
+            <div class="hero bg-base-200" style="min-height: 90vh;">
       <div class="hero-content flex-col lg:flex-row-reverse gap-8">
         <div class="text-center lg:text-left">
-          <h1 class="text-5xl font-bold">Login now!</h1>
+          <h1 class="text-5xl font-bold">Login Now!</h1>
           <p class="py-2">
             Just a step away from your next <strong>BIG</strong> question.
           </p>
@@ -48,7 +48,20 @@ export function test() {
     </div>
 
 
-    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+    </div>
+  </div>
+
+  <!-- Sidebar for large screens -->
+  <div class="drawer-side z-40 h-full lg:z-30">
+    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu hidden min-h-full w-80 bg-base-200 p-4 text-base-content">
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
+</div>
+
+  <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
       <nav>
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Branding</a>
@@ -70,20 +83,6 @@ export function test() {
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
-        
-      </div>
-    </div>
-  </div>
-
-  <!-- Sidebar for large screens -->
-  <div class="drawer-side z-40 h-full lg:z-30">
-    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-    <ul class="menu hidden min-h-full w-80 bg-base-200 p-4 text-base-content">
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
-    </ul>
-  </div>
-</div>
 
     `;
   }
