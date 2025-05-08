@@ -14,6 +14,36 @@ export function test() {
           </label>
         </div>
         <div class="mx-2 flex-1 text-xl font-bold">Telvy</div>
+
+        <!-- Right side: Theme toggle and Language switch -->
+  <div class="flex-none flex items-center gap-2 ml-auto">
+    <!-- Theme Controller -->
+    <label class="toggle text-base-content cursor-pointer">
+      <input type="checkbox" value="synthwave" class="theme-controller" />
+      <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></g></svg>
+      <svg aria-label="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></g></svg>
+    </label>
+
+    <!-- Language Selector -->
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-sm btn-ghost gap-1 px-1.5 text-[.5625rem] font-bold" aria-label="Language" title="Change Language">
+        <svg class="text-base-content/70 size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" d="M12 21a9 9 0 1 0 0-18m0 18a9 9 0 1 1 0-18m0 18c2.761 0 3.941-5.163 3.941-9S14.761 3 12 3m0 18c-2.761 0-3.941-5.163-3.941-9S9.239 3 12 3M3.5 9h17m-17 6h17"></path>
+        </svg>
+        <svg class="mt-px hidden size-2 fill-current opacity-60 sm:inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+          <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+        </svg>
+      </div>
+      <div tabindex="0" class="dropdown-content bg-base-200 text-base-content rounded-box top-px mt-16 h-[30.5rem] max-h-[calc(100vh-8.6rem)] w-56 overflow-y-auto border border-white/5 shadow-2xl outline-1 outline-black/5">
+        <ul class="menu menu-sm w-full">
+          <li><button class="menu-active"><span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">EN</span> <span class="font-[sans-serif]">English</span></button></li>
+          <li><button><span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">AR</span> <span class="font-[sans-serif]">العربية</span></button></li>
+          <li><button><span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">BN</span> <span class="font-[sans-serif]">বাংলা</span></button></li>
+          <!-- Add other languages here -->
+        </ul>
+      </div>
+    </div>
+  </div>
       </div>
 
       <!-- Main content -->

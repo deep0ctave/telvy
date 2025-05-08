@@ -10,4 +10,4 @@ import { sidebar_pg } from './sidebar_pg_template.js'
 import { about } from './about.js'
 import { contact } from './contact.js'
 
-home();
+test();
