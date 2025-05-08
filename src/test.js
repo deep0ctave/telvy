@@ -1,6 +1,6 @@
 export function test() {
   document.querySelector('#app').innerHTML = `
-  <div class="drawer lg:drawer-open overflow-hidden h-screen w-screen" data-theme="abyss">
+  <div class="drawer lg:drawer-open overflow-hidden h-screen w-screen" data-theme="forest">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
 
     <div class="drawer-content overflow-auto flex flex-col">
@@ -14,65 +14,65 @@ export function test() {
           </label>
         </div>
         <div class="mx-2 flex-1 text-xl font-bold lg:hidden">Telvy</div>
-        <div class="flex-none flex items-center gap-2 ml-auto">
-          <!-- Theme toggle and language switch (same as before) -->
-        </div>
       </div>
 
       <!-- Header Section -->
-      <div class="bg-gradient-to-r from-info to-primary text-primary-content py-16 px-6">
-        <h1 class="text-5xl font-extrabold mb-4">Notifications & Alerts</h1>
-        <p class="max-w-2xl text-lg">Review your most recent alerts and general notifications in one place.</p>
+      <div class="bg-gradient-to-r from-accent to-primary text-primary-content px-10 py-12">
+        <h1 class="text-5xl font-extrabold">Completed Quizzes</h1>
+        <p class="mt-4 max-w-2xl text-base opacity-90">
+          Here are all the quizzes you've finished. Click on any to view details, review your answers, and learn from feedback.
+        </p>
       </div>
 
-      <!-- Alerts Grid -->
-      <div class="p-6">
-        <h2 class="text-2xl font-semibold mb-4">Alerts</h2>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="card bg-error text-error-content shadow">
-            <div class="card-body">
-              <h3 class="card-title">Quiz Deadline Approaching</h3>
-              <p>Your Science quiz is due in 3 hours. Don’t miss it!</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-sm btn-outline btn-light">Open Quiz</button>
-              </div>
+      <!-- Quiz Cards -->
+      <div class="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Example Quiz Card -->
+        <div class="card bg-base-200 shadow hover:shadow-lg transition cursor-pointer">
+          <div class="card-body">
+            <h2 class="card-title">Basics of Electricity</h2>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge badge-info">Science</span>
+              <span class="badge badge-outline">10 Questions</span>
+              <span class="badge badge-outline">15 min</span>
             </div>
-          </div>
-          <div class="card bg-warning text-warning-content shadow">
-            <div class="card-body">
-              <h3 class="card-title">New Group Challenge</h3>
-              <p>Your team has been challenged in the weekly leaderboard.</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-sm btn-outline btn-light">View Challenge</button>
-              </div>
+            <p class="mt-2 text-sm">You scored 8/10. Great job! Review available.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-sm btn-outline btn-primary">View</button>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Notifications Grid -->
-      <div class="p-6">
-        <h2 class="text-2xl font-semibold mb-4">Notifications</h2>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="card bg-base-200 shadow">
-            <div class="card-body">
-              <h3 class="card-title">New Quiz Assigned</h3>
-              <p>A new quiz has been assigned in your Math group.</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-sm btn-primary">Start</button>
-              </div>
+        <div class="card bg-base-200 shadow hover:shadow-lg transition cursor-pointer">
+          <div class="card-body">
+            <h2 class="card-title">World War II Overview</h2>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge badge-warning">History</span>
+              <span class="badge badge-outline">12 Questions</span>
+              <span class="badge badge-outline">20 min</span>
             </div>
-          </div>
-          <div class="card bg-base-200 shadow">
-            <div class="card-body">
-              <h3 class="card-title">Streak Milestone</h3>
-              <p>You’ve maintained a 5-day quiz streak. Keep it up!</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-sm btn-outline btn-success">Celebrate</button>
-              </div>
+            <p class="mt-2 text-sm">You scored 9/12. Feedback available.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-sm btn-outline btn-primary">Review</button>
             </div>
           </div>
         </div>
+
+        <div class="card bg-base-200 shadow hover:shadow-lg transition cursor-pointer">
+          <div class="card-body">
+            <h2 class="card-title">Linear Equations Practice</h2>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge badge-success">Math</span>
+              <span class="badge badge-outline">8 Questions</span>
+              <span class="badge badge-outline">10 min</span>
+            </div>
+            <p class="mt-2 text-sm">Perfect score! You got 8/8.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-sm btn-outline btn-primary">View Answers</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more quiz cards here -->
       </div>
     </div>
 
@@ -82,37 +82,13 @@ export function test() {
       <div class="bg-base-300 navbar sticky top-0 z-20 hidden items-center gap-2 px-4 py-0 backdrop-blur flex-1 text-xl font-bold lg:flex"><h1>Telvy</h1></div>
       <ul class="menu p-4 w-80 min-h-full bg-base-300 text-base-content">
         <li><a>Home</a></li>
-        <li><a>Quizzes</a></li>
+        <li><a class="active">Quizzes</a></li>
         <li><a>Groups</a></li>
-        <li><a class="active">Notifications</a></li>
+        <li><a>Notifications</a></li>
         <li><a>Settings</a></li>
         <li><a>Help & Feedback</a></li>
       </ul>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-    <nav>
-      <h6 class="footer-title">Services</h6>
-      <a class="link link-hover">Branding</a>
-      <a class="link link-hover">Design</a>
-      <a class="link link-hover">Marketing</a>
-      <a class="link link-hover">Advertisement</a>
-    </nav>
-    <nav>
-      <h6 class="footer-title">Company</h6>
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
-    </nav>
-    <nav>
-      <h6 class="footer-title">Legal</h6>
-      <a class="link link-hover">Terms of use</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Cookie policy</a>
-    </nav>
-  </footer>
   `;
 }
